@@ -8,16 +8,14 @@ body {
 }
 
 header {
-    min-height: 158px;
+    min-height: 350px;
     background-color: blue;
     color: white;
 }
-
 .profile-image {
     width: 100px;
     height: 100px;
     background-color: white;
-    border-radius: 100px;
 }
 
 footer {
