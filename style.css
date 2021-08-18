@@ -1,7 +1,8 @@
 body {
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 133vh; 
+    width: clamp (28.0rem, 50%, 120rem);
+    
 }
 
 .post-link {
@@ -9,7 +10,7 @@ body {
 }
 
 header {
-    min-height: 350px;
+    min-height: 35.0rem;
     background-color:white;
     color: white;
     display: flex;
@@ -19,24 +20,26 @@ header {
     background-image: url(/assets/background_image.jpg);
     background-size: cover;
     background-position: center;
-    position: relative;
+    position: relative; 
 }
+
 header > * {
     z-index: 2;
 }
+
 header::after {
     content: "";
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    background-color: rgba(1,1,1, 0.45);
+    top: 0rem;
+    bottom: 0rem;
+    right: 0rem;
+    left: 0rem;
+    background-color: rgba(1,1,1, 0.45);  
 }
 
 .profile-image {
-    width: 100px;
-    height: 100px;
+    height: 10.0rem;
+    width: 10.0rem;
     background-color: white;
     border-radius: 50%;
     background-image: url(/assets/profile_picture.jpeg);
@@ -44,37 +47,37 @@ header::after {
 }
 
 .profile-name {
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: bold;
 }
 .subtext h4{
- margin-top: 6px; 
+ margin-top: 0.6rem; 
  align-items: center;  
  justify-content: center;
  
 }
 
 .main { 
-  margin-top: 32px;
+  margin-top: 3.2rem;
   display: flex;
   justify-content: center;
 
 }
 
 .main-container {
-    max-width: 750px;
-    min-width: 600px;
+    max-width: 75.0rem;
+    min-width: 60.0rem;
     width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
 
 }
 
 .post {
     display:flex;
-    border: 0.09px solid; 
-    border-radius: 8px;
-    min-height: 200px;
+    border: 0.09rem solid; 
+    border-radius: 0.8rem;
+    min-height: 10rem;
     overflow: hidden;
     transition:all 0.3s ease;
 }
@@ -88,18 +91,18 @@ header::after {
 
 .post-content {
     flex-basis: 60%;
-    padding: 24px;
+    padding: 2.4rem;
 }
 
 .post-date {
-font-size: 12px;
+font-size: 1.2rem;
 color: #adb5bd;
 font-weight: 600;
 }
 
 .post-title {
-margin-top: 16px;
-font-size: 1.5em;
+margin-top: 1.6rem;
+font-size: 2.0em;
 color: #333;
 font-weight: 600;
 }
@@ -108,15 +111,41 @@ font-weight: 600;
     margin: 0;
 }
 .post-text {
-    margin-top: 4px;
+    margin-top: 0.4rem;
     color: #495057;
     font-weight: 400;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     line-height: 1.4;
-    max-height: 65px;
-    
+    max-height: 6.5rem;
+   display: inline-block;
+   color: black;
+  animation: fadeIn linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
 }
 
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+    
 .post-image2 {
     flex-basis: 40%; 
     background-image: url(https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
@@ -126,17 +155,17 @@ font-weight: 600;
  
  .post-content2 {
      flex-basis: 60%;
-     padding: 24px;
+     padding: 2.4rem;
  }
  
  .post-date2 {
- font-size: 12px;
+ font-size: 1.2rem;
  color: #adb5bd;
  font-weight: 600;
  }
  
  .post-title2 {
- margin-top: 16px;
+ margin-top: 1.6rem;
  font-size: 1.5em;
  color: #333;
  font-weight: 600;
@@ -146,14 +175,40 @@ font-weight: 600;
      margin: 0;
  }
  .post-text2 {
-     margin-top: 4px;
+     margin-top: 0.4rem;
      color: #495057;
      font-weight: 400;
      font-size: 1.1em;
      line-height: 1.4;
-     max-height: 85px;
-     
- }
+     max-height: 8.5rem; 
+   display: inline-block;
+   color: black;
+   animation: fadeIn linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
 
  .post-image3 {
     flex-basis: 40%; 
@@ -164,17 +219,17 @@ font-weight: 600;
  
  .post-content3 {
      flex-basis: 60%;
-     padding: 24px;
+     padding: 2.4rem;
  }
  
  .post-date3 {
- font-size: 12px;
+ font-size: 1.2rem;
  color: #adb5bd;
  font-weight: 600;
  }
  
  .post-title3 {
- margin-top: 16px;
+ margin-top: 1.6rem;
  font-size: 1.5em;
  color: #333;
  font-weight: 600;
@@ -184,16 +239,62 @@ font-weight: 600;
      margin: 0;
  }
  .post-text3 {
-     margin-top: 4px;
+     margin-top: 0.4rem;
      color: #495057;
      font-weight: 400;
      font-size: 1.1em;
      line-height: 1.4;
-     max-height: 45px;
-     margin-bottom: 4px;
-     
- }
+     max-height: 4.5rem;
+     margin-bottom: 0.4rem;
+   display: inline-block;
+  color: black;
+  animation: fadeIn linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
 .post:hover {
-    transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -0.5rem, 0);
     box-shadow: 0 2rem 5rem 0 rgba(0,0,0, 0.5);
 }
+@media only screen and (max-width:48.0rem) {
+    html {font-size: 50%;}
+}
+
+@media only screen and (max-width:36.0rem) {
+    html {font-size: 37%;}
+}
+
+@media only screen and (max-width:32.0rem) {
+    html {font-size: 30%;}
+}
+
+@media only screen and (max-width:28.0rem) {
+    html {font-size: 27%;}
+}
+
+
+
+
