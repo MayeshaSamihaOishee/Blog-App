@@ -4,7 +4,6 @@ body {
     width: clamp (28.0rem, 50%, 120rem);
     
 }
-
 .post-link {
     text-decoration:navajowhite;
 }
@@ -17,7 +16,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/background_image.jpg);
+    background-image: url(https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
     background-size: cover;
     background-position: center;
     position: relative; 
@@ -42,7 +41,7 @@ header::after {
     width: 10.0rem;
     background-color: white;
     border-radius: 50%;
-    background-image: url(/assets/profile_picture.jpeg);
+    background-image: url(https://media.istockphoto.com/vectors/young-woman-working-at-home-vector-id1199842427);
     background-size:cover;
 }
 
