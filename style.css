@@ -1,3 +1,4 @@
+
 body {
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
@@ -283,7 +284,7 @@ font-weight: 600;
 }
 
 @media only screen and (max-width:36.0rem) {
-    html {font-size: 37%;}
+    html {font-size: 17%;}
 }
 
 @media only screen and (max-width:32.0rem) {
@@ -294,6 +295,25 @@ font-weight: 600;
     html {font-size: 27%;}
 }
 
+@media only screen and (max-width:57.6rem) {
+  html {font-size: 50%;}
+}
+
+@media only screen and (min-width:57.6rem) and (max-width:76.8rem){
+  html {font-size: 45%;}
+}
+
+@media only screen and (min-width:76.8rem) and (max-width:99.2rem){
+  html {font-size: 50%;}
+}
+
+@media only screen and (min-width:99.2rem) and (max-width:120.0rem){
+  html {font-size: 50%;}
+}
+
+@media only screen and (min-width:120.0rem) and (max-width:140.0rem){
+  html {font-size: 50%;}
+}
 
 
 
