@@ -2,7 +2,7 @@
 body {
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
-    width: clamp (28.0rem, 50%, 120rem);
+    width: clamp (28.0rem, 50%, 120rem); 
     
 }
 .post-link {
@@ -49,6 +49,7 @@ header::after {
 .profile-name {
     font-size: 3rem;
     font-weight: bold;
+    position: center;
 }
 .subtext h4{
  margin-top: 0.6rem; 
@@ -66,7 +67,6 @@ header::after {
 
 .main-container {
     max-width: 75.0rem;
-    min-width: 60.0rem;
     width: 100%;
     padding-left: 1.6rem;
     padding-right: 1.6rem;
@@ -110,6 +110,7 @@ font-weight: 600;
 .post-title h4 {
     margin: 0;
 }
+
 .post-text {
     margin-top: 0.4rem;
     color: #495057;
@@ -119,11 +120,11 @@ font-weight: 600;
     max-height: 6.5rem;
    display: inline-block;
    color: black;
-  animation: fadeIn linear 7s;
-  -webkit-animation: fadeIn linear 7s;
-  -moz-animation: fadeIn linear 7s;
-  -o-animation: fadeIn linear 7s;
-  -ms-animation: fadeIn linear 7s;
+  animation: fadeIn linear 2.3s;
+  -webkit-animation: fadeIn linear 2.3s;
+  -moz-animation: fadeIn linear 2.3s;
+  -o-animation: fadeIn linear 2.3s;
+  -ms-animation: fadeIn linear 2.3s;
 }
 
 @keyframes fadeIn {
@@ -183,11 +184,11 @@ font-weight: 600;
      max-height: 8.5rem; 
    display: inline-block;
    color: black;
-   animation: fadeIn linear 7s;
-  -webkit-animation: fadeIn linear 7s;
-  -moz-animation: fadeIn linear 7s;
-  -o-animation: fadeIn linear 7s;
-  -ms-animation: fadeIn linear 7s;
+   animation: fadeIn linear 4.67s;
+  -webkit-animation: fadeIn linear 4.76s;
+  -moz-animation: fadeIn linear 4.67s;
+  -o-animation: fadeIn linear 4.67s;
+  -ms-animation: fadeIn linear 4.67s;
 }
 
 @keyframes fadeIn {
@@ -280,41 +281,40 @@ font-weight: 600;
     box-shadow: 0 2rem 5rem 0 rgba(0,0,0, 0.5);
 }
 
-@media only screen and (max-width:48.0rem) {
-    html {font-size: 50%;}
+
+@media (min-width:140.0rem) {
+  html {
+    font-size: 50%;
+    justify-items: center;
+  }
 }
 
-@media only screen and (max-width:36.0rem) {
-    html {font-size: 17%;}
+@media (min-width:120.0rem) {
+  html {font-size: 50%;
+  justify-items: center;} 
 }
 
-@media only screen and (max-width:32.0rem) {
-    html {font-size: 30%;}
-}
-
-@media only screen and (max-width:28.0rem) {
-    html {font-size: 27%;}
-}
-
-@media only screen and (max-width:57.6rem) {
+@media (max-width:99.0rem) {
   html {font-size: 50%;}
 }
 
-@media only screen and (min-width:57.6rem) and (max-width:76.8rem){
-  html {font-size: 45%;}
-}
-
-@media only screen and (min-width:76.8rem) and (max-width:99.2rem){
+@media (max-width:80.0rem) {
   html {font-size: 50%;}
 }
 
-@media only screen and (min-width:99.2rem) and (max-width:120.0rem){
+@media (max-width:60.0rem) {
   html {font-size: 50%;}
 }
 
-@media only screen and (min-width:120.0rem) and (max-width:140.0rem){
-  html {font-size: 50%;}
+@media (max-width:48.0rem) {
+  html {font-size: 50%;
+  } 
+  .profile-name {font-size: 2.0rem;
+  }
+ } 
+ @media (max-width:24.0rem) {
+  .subtext h4 {font-size: 1.25rem;
+  }
 }
 
-
-
+  
